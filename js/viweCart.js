@@ -1,7 +1,6 @@
-updateViwe();
 for (let product of products.product) {
     let html = "";
-    app.innerHTML += html += `
+    app.innerHTML = html += `
    <section class="container content-section">
     <h2 class="section-header"></h2>
     <div class="shop-items">
@@ -16,7 +15,7 @@ for (let product of products.product) {
                 </div>
                 <div class="shop-item-details">
                     <div class="shop-item-price">${product.price} kr </div>
-                    <button class="btn btn-primary shop-item-button" type="button">TO CART</button>
+                    <button class="btn btn-primary shop-item-button" type="button">Legg i handlevogn</button>
 
                 </div>
             </div>
@@ -26,10 +25,11 @@ for (let product of products.product) {
     </section>
     `;
 }
-function updateViwe() {
-    let html = "";
-    app.innerHTML = html +=
-        ` <div class="p-item">
+
+
+let html = "";
+app.innerHTML += html +=
+    ` <div class="p-item">
     <h1 class="band-name band-name-large">Dansken og Meg</h1>
     </header>
     <div id="cart-items">
@@ -46,10 +46,9 @@ function updateViwe() {
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">0</span>
             </div>
-            <button onclick="purchaseClicked" class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            <button onclick="purchaseClicked" class="btn btn-primary btn-purchase" type="button">KJØP</button>
 
              `;
-}
 
 
 function cart(imageSrc, title, price) {
