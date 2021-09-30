@@ -27,7 +27,8 @@ for (let product of products.product) {
     `;
 }
 function updateViwe() {
-    app.innerHTML +=
+    let html = "";
+    app.innerHTML = html +=
         ` <div class="p-item">
     <h1 class="band-name band-name-large">Dansken og Meg</h1>
     </header>
